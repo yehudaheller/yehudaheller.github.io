@@ -2,20 +2,25 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
     background-color: #007bff;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 40px 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 header p {
@@ -23,10 +28,10 @@ header p {
 }
 
 section {
-    margin: 20px;
-    background-color: #fff;
+    margin: 40px 0;
     padding: 20px;
     border-radius: 8px;
+    background-color: #fff;
 }
 
 h2 {
@@ -39,7 +44,7 @@ ul {
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .project {
@@ -50,49 +55,5 @@ footer {
     background-color: #007bff;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-
-    header p {
-        font-size: 0.8em;
-    }
-
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 3px;
-    }
-
-    .project {
-        margin-bottom: 10px;
-    }
-
-    footer {
-        font-size: 0.8em;
-    }
-
-    /* Responsive Education Section */
-    #education ul {
-        padding-left: 10px;
-    }
+    padding: 20px 0;
 }
