@@ -1,59 +1,290 @@
+/* Add your existing styles here */
+
+/* Make the page more responsive */
 body {
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #495057;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-header {
-    background-color: #007bff;
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar styles */
+.navbar {
+    background: #343a40;
+}
+
+.navbar-dark .navbar-nav .nav-link {
     color: #fff;
-    text-align: center;
-    padding: 40px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-header p {
-    margin: 10px 0 0;
-}
-
-section {
-    margin: 40px 0;
-    padding: 20px;
-    border-radius: 8px;
+.navbar-dark .navbar-toggler-icon {
     background-color: #fff;
 }
 
-h2 {
-    color: #007bff;
+/* Header styles */
+#hero-area {
+    background: #343a40;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
 }
 
-ul {
+#hero-area h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* About section styles */
+#about {
+    padding: 60px 0;
+}
+
+.profile-wrapper {
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Education section styles */
+.education {
+    margin-top: 30px;
+}
+
+.timeline {
     list-style: none;
     padding: 0;
 }
 
-li {
-    margin-bottom: 10px;
+.timeline li {
+    position: relative;
 }
 
-.project {
-    margin-bottom: 20px;
+.timeline li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background: #343a40;
+    width: 4px;
+    height: 100%;
 }
 
-footer {
-    background-color: #007bff;
-    color: #fff;
+.timeline h3 {
+    margin-top: 0;
+}
+
+/* Services section styles */
+#services {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.services-item {
     text-align: center;
-    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* Work section styles */
+#portfolios {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 58, 64, 0.7);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Counter section styles */
+.counter-section {
+    background: #343a40;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.counter {
+    margin-bottom: 30px;
+}
+
+.counter .icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.counterUp {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Contact section styles */
+#contact {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+/* Footer styles */
+.footer-area {
+    background: #343a40;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-icon {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    background: #343a40;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .navbar-toggler {
+        margin: 15px 0;
+    }
+
+    #hero-area h2 {
+        font-size: 30px;
+    }
+
+    .profile-wrapper {
+        padding: 15px;
+    }
+
+    #about,
+    #services,
+    #portfolios,
+    #contact {
+        padding: 30px 0;
+    }
+
+    .timeline li {
+        margin-bottom: 20px;
+    }
+
+    .services-item,
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+
+    .counter,
+    .contact-form {
+        margin-bottom: 20px;
+    }
+
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        font-size: 18px;
+        padding: 5px;
+    }
 }
