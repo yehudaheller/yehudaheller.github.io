@@ -14,8 +14,13 @@ header {
   color: #fff;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.header-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 h1 {
@@ -52,11 +57,63 @@ h2 {
   margin-bottom: 10px;
 }
 
-.about-me img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+.about-me p {
+  line-height: 1.5;
 }
 
 .projects ul {
-  list
+  list-style: none;
+  padding: 0;
+}
+
+.projects h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.projects li {
+  margin-bottom: 10px;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  margin-bottom: 5px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 5px;
+}
+
+/* Responsiveness tweaks */
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-image {
+    margin-bottom: 15px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+}
