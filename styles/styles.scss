@@ -23,7 +23,7 @@
 
 .light-mode {
     --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
+    --color-secondary: #0000FF; 
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -34,6 +34,7 @@
     --color-grey-5: #f8f8f8;
     --color-grey-6: #12181b;
 }
+
 
 body {
     background-color: var(--color-primary);
