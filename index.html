@@ -2,557 +2,225 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yehuda Heller</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Yehuda Heller — Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/hero.png" alt="">
-                </div>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
+
+
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <img src="hero.jpg" alt="logo">
+                <h2><span style="color: #72a1dea2;">Yehuda</span> Heller</h2>
+                <p class="header-sub">Software Engineer — M.Sc. (in progress) in Computer Science</p>
+            </div>
+
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+            <div class="box-icons">
+                <p><i class='bx bxl-youtube'></i></p>
+                <p><i class='bx bxl-github'></i></p>
+                <p><i class='bx bxl-linkedin-square'></i></p>
+            </div>
+
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>            
+        </header>
+        <div class="sidebar">
+            <div class="close-icon">
+                <i class='bx bx-x'></i>
             </div>
             
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Yehuda Heller.</span>
-                    A Software Developer.
-                </h1>
-                <p>
-                    I am Yehuda Heller, a diligent Computer Science graduate equipped with a Bachelor's degree and a diploma in Electronics Engineering. Currently advancing my education with a Master's degree, I specialize in Python/JavaScript backend development and automation. My commitment lies in crafting sophisticated solutions to intricate technological challenges. Beyond my professional pursuits, I derive fulfillment from the realms of music and travel.
-                    For inquiries or professional collaborations, please feel free to contact me at <b><a href="mailto:yehudaheller10@gmail.com">yehudaheller10@gmail.com</a> </b>.
-                </p>
-                <div class="btn-con">
-                    <a href="https://github.com/yehudaheller" class="main-btn" target="_blank">
-                        <span class="btn-text">Check my GitHub</span>
-                        <span class="btn-icon"><i class="fab fa-github"></i></span>
-                    </a>
-                </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+            <div class="social-sidebar">
+                <a><i class='bx bxl-youtube'></i></a>
+                <a><i class='bx bxl-github'></i></a>
+                <a><i class='bx bxl-linkedin-square'></i></a>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-            </div>
-          
-             <!-- 
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Who am I ?</h4>
-                    <p>
-                        I am Yehuda, a 26-year-old university student pursuing a master's degree in computer science. I hold a bachelor's degree in computer science and a diploma in Electronics Engineering.
-                        With three years of experience in computer communication, I have developed a strong foundation in the field.
-                        I am passionate about creating innovative solutions and enjoy the process of learning and challenging myself. My primary focus is on developing new things, particularly in Python, to address various problems. I thrive as a team member and consider myself a good friend.
-                        Beyond my academic and professional interests, I also have a penchant for travel and fun activities. I am an enthusiast of sports and cycling.
-                    </p>
-                    <div class="btn-con">
-                        <a href="#" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
-                        </a>
-                    </div>
+
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video autoplay loop muted playsinline src="videos/blackhole.mp4"></video>
+        </div>
+
+        <section class="hero ">
+            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-info-title" >
+                    <i class='bx bxl-sketch'></i>
+                    Software Engineer Portfolio
                 </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">Lots</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">3+</p>
-                            <p class="small-text">Years of <br /> experience <br /> in computer <br /> communication </p>
-                        </div>
-                    </div>
+
+                <h1 data-aos="fade-right" data-aos-duration="3000">Yehuda Heller — Software Engineer</h1>
+
+                <p>I'm a software engineer specializing in artificial intelligence, Android applications, Edge AI, web applications, and embedded systems. M.Sc. (ongoing) in Computer Science; B.Sc. in Computer Science; Electronic Engineering technician; advanced software development courses and trainings.</p>
+
+                <button><i class='bx bx-send' ></i> Contact Me</button>
+            </div>
             
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">   </p>
-                            <p class="small-text">.... <br /> Clients</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">   </p>
-                            <p class="small-text">.... <br /> ....</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-     -->
-         
-        <h4 class="stat-title">My Timeline</h4>
-        <div class="timeline">
-        
-            <!-- Education -->
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2024 - Present</p>
-                <h5>M.SC. in Computer Science<span> - Open University of Israel</span></h5>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2020 - 2023</p>
-                <h5>B.Sc. in Computer Science<span> - Hadassah Academic College, Jerusalem</span></h5>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2015 - 2017</p>
-                <h5>Practical Electronic Engineer<span> - Ort College for Aviation Technology and Space</span></h5>
-                <p>Graduated with honors.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2012 - 2015</p>
-                <h5>Full Technological Matriculation<span> - ORT School</span></h5>
-                <p>10 units in electronics & electricity.</p>
+            <div class="skills-video-box " >
+                <video class="skills-video autoBlur" autoplay loop muted playsinline src="videos/hero-video.mp4"></video>
             </div>
         
-            <!-- Professional Training -->
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2023</p>
-                <h5>Elite Program by Scale-Up Velocity's Excellence Academy<span> - Post-Degree Programming Bootcamp</span></h5>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2017 - 2020</p>
-                <h5>Cisco Courses<span> - Network Technician, Troubleshooting, Switched Network, IP Routing, & Team Leader</span></h5>
-                <p>at "Sde Dov" base.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2012</p>
-                <h5>Cisco IT Essentials<span> - Includes Practical Internship and Volunteering in the Community</span></h5>
-            </div>
-        
-            <!-- Work Experience -->
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2017 - 2022</p>
-                <h5>Network Technician<span> - Israeli Air Force</span></h5>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2017 - 2020</p>
-                <h5>Network Technician & Team Leader<span> - Israeli Air Forces</span></h5>
-                <p>Top Secret Classification.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="tl-icon">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <p class="tl-duration">2012 - 2017</p>
-                <h5>Computer Technician<span> - Machshava Tova</span></h5>
-            </div>
-        
-        </div>    
+            <div class="scroll-down"></div>
         </section>
 
+        <!-- Projects placed immediately after hero as requested -->
+        <section class="my-project">
+            <h1 class="section-title autoDisplay">My Projects</h1>
 
+            <div class="projects-grid">
+                <!-- Project 1: keep existing video, autoplay muted -->
+                <div class="project-card">
+                    <div class="project-vidbox">
+                        <video loop id="projectVideo1" src="videos/project1.mp4" autoplay muted playsinline></video>
+                    </div>
+                    <div class="project-info fadein-left">
+                        <h1>Neural Network for Detecting Pecking Behavior and Counting Chickens</h1>
+                        <p>I trained a neural network to detect pecking interactions between chickens in video footage and to count chickens standing on cooling perches. Initial experiments on a small video set were successful, and the project is ongoing pending a larger dataset.</p>
+                        <button><i class='bx bx-link-external' ></i> View</button>
+                    </div>
+                </div>
 
-        <section class="container" id="portfolio">
-        <div class="main-title">
-            <h2>My <span>Works</span><span class="bg-text">My Work</span></h2>
-        </div>
-        <p class="port-text">
-            For my works, check out my GitHub profile:
-            <a href="https://github.com/yehudaheller" target="_blank">https://github.com/yehudaheller</a>
-        </p>
-        </section>
+                <!-- Project 2: cow detection image -->
+                <div class="project-card">
+                    <div class="project-vidbox project-image">
+                        <img src="projects/cow detection.bmp" alt="Cow Head Position Analysis" />
+                    </div>
+                    <div class="project-info fadein-left">
+                        <h1>Neural Network for Cow Head Position Analysis</h1>
+                        <p>I annotated a large dataset of cow images and trained a neural network capable of detecting the head, eyes (left/right), nose, and mouth (left/right). Using the trained model, I processed over 250,000 images to extract precise spatial keypoints for each cow.</p>
+                        <button><i class='bx bx-link-external' ></i> View</button>
+                    </div>
+                </div>
 
-        
-        <!-- old version of MY PORTFOLIO page
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
-            </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
+                <!-- Project 3: activity reporting system image -->
+                <div class="project-card">
+                    <div class="project-vidbox project-image">
+                        <img src="projects/web app- work report system.bmp" alt="Activity Reporting System" />
                     </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
+                    <div class="project-info fadein-left">
+                        <h1>Activity Reporting System for Engineers</h1>
+                        <p>I developed a full web-based system that enables research engineers to report daily or weekly activities and provides an admin interface for management. The system is currently in regular daily use.</p>
+                        <button><i class='bx bx-link-external' ></i> View</button>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                                end of comment of projects in -->
-        
-        <!-- blog selection, i put it in comment for now...
 
-        
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
+                <!-- Project 4: microscopy app image -->
+                <div class="project-card">
+                    <div class="project-vidbox project-image">
+                        <img src="projects/microbiology plate analyzer.bmp" alt="Microscopic Well Analysis" />
                     </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
+                    <div class="project-info fadein-left">
+                        <h1>Android Application for Microscopic Well Analysis</h1>
+                        <p>I developed an Android application that captures or uploads microscope plate images and automatically analyzes well intensities, similar to ImageJ. The app supports RGB, Luma, and Blue-Channel analysis and achieves accuracy comparable to ImageJ.</p>
+                        <button><i class='bx bx-link-external' ></i> View</button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="info-section">
+            <h1 class="section-title autoDisplay">Hello,There👋</h1>
+            <div class="info-cards">
+                <div class="card ">
+                    <h1>Hi there, I'm Yehuda Heller</h1>
+                    <p>Software Engineer with experience across AI, Android, web apps and embedded systems. Currently completing an M.Sc. in Computer Science. B.Sc. in Computer Science and certified Electronic Engineering technician. Completed advanced training in software development.</p>
 
-           end of blog in comment -->
-        
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                    <img src="images/grid1.png" alt="">
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                        Feel free to contact me at any time       
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : Jerusalem, Israel
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: yehudaheller10@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: The Open University, M.Sc. in Computer Science(Student) </span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: 052-5829530</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Hebrew, English </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                                    -->
-                    
+                <div class="card">
+                    <h1>Tech Stack</h1>
+                    <p>AI / Machine Learning (PyTorch, TensorFlow), Edge AI, Android (Kotlin/Java), Web (React, Node.js), Embedded systems, Python, C/C++, Databases (MongoDB, MySQL), Image processing and CV.</p>
+
+                    <img src="images/grid2.png" alt="">
+                </div>
+
+                <div class="card">
+                    <h1>Remote and Collaborative</h1>
+                    <p>Based in Bari, Italy. Open to remote work and international collaboration. Flexible with time zones.</p>
+
+                    <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
+
+                    <button><i class='bx bx-send'></i> Contact Me</button>
+                </div>
+
+                <div class="card">
+                    <h1>My Passion for Coding</h1>
+                    <p>I love solving problems and building practical systems. I enjoy researching AI solutions, developing mobile and web apps, and deploying models on edge and embedded platforms.</p>
+
+                    <img src="images/grid4.png" alt="">
                 </div>
             </div>
         </section>
-    </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-      
-      <!-- blog button from slidebar in right, I put it in comment also the other code part of this section
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-       </div>
-        -->
-        
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
-</body>
-</html>
+         <section class="contact-section">
+             <h1 class="section-title autoDisplay">Get In Touch</h1>
+
+             <div class="contact-content autoBlur">
+                 <div class="contact-intro">
+                     <h2>Yehuda Heller</h2>
+                     <p class="contact-subtitle">Software Engineer | M.Sc. Computer Science</p>
+                     <p class="contact-description">I'm always interested in discussing new opportunities, collaborations, and innovative projects. Feel free to reach out!</p>
+                 </div>
+
+                 <div class="contact-details">
+                     <div class="contact-item">
+                         <div class="contact-icon">
+                             <i class='bx bxl-linkedin-square'></i>
+                         </div>
+                         <div class="contact-text">
+                             <h3>LinkedIn</h3>
+                             <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" rel="noopener noreferrer">linkedin.com/in/yehuda-heller</a>
+                         </div>
+                     </div>
+
+                     <div class="contact-item">
+                         <div class="contact-icon">
+                             <i class='bx bx-envelope'></i>
+                         </div>
+                         <div class="contact-text">
+                             <h3>Email</h3>
+                             <a href="mailto:yehudaheller10@gmail.com">yehudaheller10@gmail.com</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+         </section>
+
+         <section class="footer">
+
+             <div class="box-icons">
+                 <p><i class='bx bxl-youtube'></i></p>
+                 <p><i class='bx bxl-github'></i></p>
+                 <p><i class='bx bxl-linkedin-square'></i></p>
+             </div>
+         </section>
+
+
+     </div>
+     <script src="app.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script >
+       AOS.init();
+     </script>
+ </body>
+ </html>
