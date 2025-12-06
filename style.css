@@ -195,6 +195,27 @@ header ul a:hover{
     box-shadow: 0 0 15px #72a1de81;
 }
 
+/* Style mailto links that use .contact-btn so they look like buttons */
+.contact-btn{
+    display: inline-block;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 1px solid #72a1de81;
+    background-color: #2200493d;
+    box-shadow: 0 0 5px #72a1de81;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.contact-btn:hover,
+.contact-btn:focus{
+    box-shadow: 0 0 15px #72a1de81;
+    outline: none;
+}
+
 /* Gradient Animation */
 .gradient{
     background: linear-gradient(to right,#00aaa7, #7e42a7, #6600c5, #6070fd,#2a46ff, #0099ff, #008ead);
@@ -302,68 +323,81 @@ header ul a:hover{
 }
 
 .card{
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    gap: 30px;
     position: relative;
     width: 100%;
-    max-width: 600px;
-    height: 50vh;
-    min-height: 400px;
+    max-width: 900px;
+    min-height: 450px;
+    padding: 40px;
     overflow: hidden;
-    border: 1px solid gray;
+    border: 1px solid rgba(114, 161, 222, 0.3);
     background-color: #080020b7;
     border-radius: 20px;
     transition: 0.5s;
+    box-sizing: border-box;
 }
 
 .card h1{
-    position: absolute;
-    margin: 0;
-    bottom: 40%;
-    left: 5%;
-    font-size: 25px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin: 0 0 10px 0;
+    font-size: 28px;
     z-index: 1;
     color: lightgray;
+    text-align: center;
 }
 
 .card p{
-    position: absolute;
-    bottom: 3%;
-    left: 5%;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
+    padding: 20px;
+    color: lightgray;
+    font-size: 16px;
+    line-height: 26px;
     z-index: 1;
-    max-width: 300px;
-    color: gray;
-    font-size: 13px;
-    line-height: 20px;
+    align-self: center;
 }
 
 .card img{
-    width: 80%;
-    height: 50%;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .card video{
-    margin-top: 10%;
-    width: 70%;
-    height: 50%;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
     object-fit: cover;
     mix-blend-mode: lighten;
+    border-radius: 15px;
 }
 
 .card button{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    padding: 10px 25px;
-    border: 1px solid gray;
-    background-color: #0f1217;
-    color: gray;
-    border-radius: 20px;
-    box-shadow: 0 0 5px lightgray;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 10px;
+    padding: 12px 30px;
+    border: 1px solid #72a1de;
+    background-color: rgba(114, 161, 222, 0.1);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(114, 161, 222, 0.3);
     cursor: pointer;
     transition: 0.3s;
+    font-size: 16px;
 }
 
 .card button:hover{
@@ -481,6 +515,42 @@ header ul a:hover{
     }
     /* ensure project text never scrolls internally on small screens */
     .project-info{ max-height: none !important; overflow: visible !important; }
+    .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        padding: 35px 25px;
+        gap: 25px;
+    }
+
+    .card h1{
+        font-size: 24px;
+    }
+
+    .card p{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .card video{
+        grid-column: 1;
+        grid-row: 2;
+        max-height: 280px;
+    }
+
+    .card button{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .slider{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        transform: none;
+        left: 0;
+    }
 }
 
 /* Desktop: show multiple cards side-by-side and wrap automatically (grid) */
@@ -688,6 +758,35 @@ header ul a:hover{
         max-width: 300px;
     }
 
+    .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        padding: 35px 25px;
+        gap: 25px;
+    }
+
+    .card h1{
+        font-size: 24px;
+    }
+
+    .card p{
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .card video{
+        grid-column: 1;
+        grid-row: 2;
+        max-height: 280px;
+    }
+
+    .card button{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
     .slider{
         position: relative;
         width: 100%;
@@ -738,29 +837,40 @@ header ul a:hover{
     }
 
     .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
         max-width: 100%;
-        height: auto;
-        min-height: 350px;
+        padding: 30px 20px;
+        gap: 20px;
+        min-height: auto;
     }
 
     .card h1{
         font-size: 22px;
-        bottom: 35%;
+        text-align: center;
     }
 
     .card p{
-        font-size: 14px;
-        max-width: 90%;
-        bottom: 15%;
-    }
-
-    .card button{
-        bottom: 5%;
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+        line-height: 24px;
     }
 
     .card video{
-        margin-top: 5%;
-        width: 80%;
+        grid-column: 1;
+        grid-row: 2;
+        max-height: 250px;
+        margin: 0 auto;
+    }
+
+    .card button{
+        grid-column: 1;
+        grid-row: 4;
+        padding: 10px 25px;
+        font-size: 14px;
     }
 
     .section-title{
