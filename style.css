@@ -292,8 +292,9 @@ header ul a:hover{
 }
 
 .info-cards{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     width: 100%;
     height: 100%;
@@ -305,8 +306,10 @@ header ul a:hover{
     align-items:flex-start;
     justify-content: center;
     position: relative;
-    width: auto;
-    height: 40vh;
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    min-height: 400px;
     overflow: hidden;
     border: 1px solid gray;
     background-color: #080020b7;
@@ -372,30 +375,6 @@ header ul a:hover{
     box-shadow: 0 0 15px rgb(211, 211, 211);
 }
 
-.card:nth-child(3){
-    grid-row: span 2;
-    height: 83vh;
-}
-
-.card:nth-child(3) p{
-    bottom: 12%;
-}
-
-.card:nth-child(3) h1{
-    bottom: 21%;
-}
-
-.card:nth-child(4){
-    grid-column: span 2;
-}
-
-.card:nth-child(4) p{
-    max-width: 650px;
-}
-
-.card:nth-child(4) h1{
-    bottom: 35%;
-}
 
 
 
@@ -752,6 +731,36 @@ header ul a:hover{
     .coder p{
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .info-cards{
+        padding: 0 10px;
+    }
+
+    .card{
+        max-width: 100%;
+        height: auto;
+        min-height: 350px;
+    }
+
+    .card h1{
+        font-size: 22px;
+        bottom: 35%;
+    }
+
+    .card p{
+        font-size: 14px;
+        max-width: 90%;
+        bottom: 15%;
+    }
+
+    .card button{
+        bottom: 5%;
+    }
+
+    .card video{
+        margin-top: 5%;
+        width: 80%;
     }
 
     .section-title{
