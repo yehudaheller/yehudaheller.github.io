@@ -1,28 +1,28 @@
 /* ==========================================================================
-   DESIGN SYSTEM & ELITE TECH TOKENS (Sleek Green & Black Theme)
+   DESIGN SYSTEM & ELITE TECH TOKENS (Sleek Cyan & Black Theme)
    ========================================================================== */
 :root {
     /* Premium Typography */
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-    /* Sleek Green & Black Dark Palette */
+    /* Sleek Cyan & Black Dark Palette */
     --bg-dark: #000000;
     --bg-deep: #050505;
-    --bg-glass: rgba(8, 10, 8, 0.88);
-    --border-glass: rgba(0, 255, 135, 0.08);
-    --border-glass-glow: rgba(0, 255, 135, 0.35);
+    --bg-glass: rgba(8, 8, 10, 0.88);
+    --border-glass: rgba(0, 240, 255, 0.08);
+    --border-glass-glow: rgba(0, 240, 255, 0.35);
 
-    /* Cyber Green Accent Palette (Strict Black and Green, no scattered colors) */
-    --blue-primary: #00ff87; /* High-contrast neon green */
-    --indigo-primary: #00b35c; /* Mid-tone emerald green */
-    --silver-bright: #00ff87;
-    --silver-medium: #00b35c;
-    --silver-dark: #004d28;
+    /* Cyber Cyan Accent Palette (Strict Black and Light Blue, no scattered colors) */
+    --blue-primary: #00f0ff; /* High-contrast electric cyan */
+    --indigo-primary: #00a3ff; /* Mid-tone sky blue */
+    --silver-bright: #00f0ff;
+    --silver-medium: #00a3ff;
+    --silver-dark: #005080;
     --slate-muted: #4b5563;
     
-    /* Elegant Green-Metallic Shimmer Gradients */
-    --accent-glow-gradient: linear-gradient(135deg, #ffffff 0%, #00ff87 50%, #008040 100%);
+    /* Elegant Cyan-Metallic Shimmer Gradients */
+    --accent-glow-gradient: linear-gradient(135deg, #ffffff 0%, #00f0ff 50%, #0066cc 100%);
     --bg-gradient: #000000;
 
     /* High-contrast Typography Colors */
@@ -70,7 +70,7 @@ body {
     background: var(--bg-dark);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 255, 135, 0.12);
+    background: rgba(0, 240, 255, 0.12);
     border-radius: 10px;
     transition: var(--transition-snappy);
 }
@@ -85,7 +85,7 @@ body {
     position: fixed;
     width: 450px;
     height: 450px;
-    background: radial-gradient(circle, rgba(0, 255, 135, 0.04) 0%, rgba(0, 255, 135, 0.005) 50%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 240, 255, 0.04) 0%, rgba(0, 240, 255, 0.005) 50%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 1;
@@ -93,14 +93,14 @@ body {
     mix-blend-mode: screen;
 }
 
-/* Stunning Top Spotlighting Glow (Grok landing page style) - Cyber-Green Left Spotlight */
+/* Stunning Top Spotlighting Glow (Grok landing page style) - Cyber-Cyan Left Spotlight */
 .top-spotlight {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 550px;
-    background: radial-gradient(ellipse 65% 100% at 30% 0%, rgba(0, 255, 135, 0.15) 0%, rgba(0, 179, 92, 0.07) 30%, rgba(0, 255, 135, 0.01) 60%, transparent 100%);
+    background: radial-gradient(ellipse 65% 100% at 30% 0%, rgba(0, 240, 255, 0.15) 0%, rgba(0, 163, 255, 0.07) 30%, rgba(0, 240, 255, 0.01) 60%, transparent 100%);
     pointer-events: none;
     z-index: 1;
     overflow: hidden;
@@ -114,9 +114,9 @@ body {
     left: 0%;
     width: 60%;
     height: 2px;
-    background: linear-gradient(to right, transparent, rgba(0, 255, 135, 0.35) 20%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 255, 135, 0.35) 80%, transparent);
+    background: linear-gradient(to right, transparent, rgba(0, 240, 255, 0.35) 20%, rgba(255, 255, 255, 0.75) 50%, rgba(0, 240, 255, 0.35) 80%, transparent);
     filter: blur(1px);
-    box-shadow: 0 0 30px rgba(0, 255, 135, 0.8), 0 0 60px rgba(0, 179, 92, 0.4);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.8), 0 0 60px rgba(0, 163, 255, 0.4);
 }
 
 .container {
@@ -338,7 +338,7 @@ header ul.nav-links li a:hover {
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, #ffffff 0%, #00ff87 25%, #ffffff 50%, #00ff87 75%, #ffffff 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #00f0ff 25%, #ffffff 50%, #00f0ff 75%, #ffffff 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -357,7 +357,7 @@ header ul.nav-links li a:hover {
 }
 
 .project-card:hover::before {
-    background: linear-gradient(90deg, rgba(0, 255, 135, 0.08) 0%, rgba(0, 255, 135, 0.55) 50%, rgba(0, 255, 135, 0.08) 100%);
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.08) 0%, rgba(0, 240, 255, 0.55) 50%, rgba(0, 240, 255, 0.08) 100%);
     background-size: 200% auto;
     animation: borderShimmer 2.5s linear infinite;
 }
