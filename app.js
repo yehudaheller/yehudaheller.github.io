@@ -1,38 +1,63 @@
-// select all project videos inside project-vidbox so code is robust
-const projectVideos = Array.from(document.querySelectorAll('.project-vidbox video'));
+/**
+ * Yehuda Heller — Portfolio Javascript Functionality
+ * Manages video playback controls, glassmorphic interactive behaviors,
+ * mouse-tracking cosmic glows, and mobile nav drawer actions.
+ */
 
-// Sidebar elements (guard against missing elements)
-const sideBar = document.querySelector('.sidebar');
-const menu = document.querySelector('.menu-icon');
-const closeIcon = document.querySelector('.close-icon');
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. PROJECT VIDEOS AUTOPLAY
+    // Select all project videos inside project-vidbox and project-vidbox-split
+    const projectVideos = Array.from(document.querySelectorAll('.project-vidbox video, .project-vidbox-split video'));
 
-const hoverSign = document.querySelector('.hover-sign');
+    projectVideos.forEach((video) => {
+        if (!video) return;
+        
+        // Ensure videos are playing by default (standard browser compatibility check)
+        video.play().catch(() => {});
 
-// Play on hover, but do NOT pause on mouseout — videos should keep playing
-projectVideos.forEach(function(video){
-    if(!video) return;
-    video.addEventListener('mouseover', function(){
-        // attempt to play (video elements already set to autoplay muted)
-        video.play().catch(()=>{});
-        if(hoverSign) hoverSign.classList.add('active');
+        video.addEventListener('mouseover', () => {
+            // Keep playing when hovered
+            video.play().catch(() => {});
+        });
     });
-    video.addEventListener('mouseout', function(){
-        // keep playing; only remove hover sign indicator
-        if(hoverSign) hoverSign.classList.remove('active');
+
+    // 2. INTERACTIVE AMBIENT MOUSE GLOW
+    const mouseGlow = document.getElementById('mouseGlow');
+    if (mouseGlow) {
+        // Track mouse position smoothly with light resource usage
+        window.addEventListener('mousemove', (e) => {
+            mouseGlow.style.left = `${e.clientX}px`;
+            mouseGlow.style.top = `${e.clientY}px`;
+        }, { passive: true });
+    }
+
+    // 3. MOBILE SIDEBAR DRAWER MANAGEMENT
+    const sideBar = document.querySelector('.sidebar');
+    const menuIcon = document.querySelector('.menu-icon');
+    const closeIcon = document.querySelector('.close-icon');
+
+    if (menuIcon && sideBar) {
+        menuIcon.addEventListener('click', () => {
+            sideBar.classList.remove('close-sidebar');
+            sideBar.classList.add('open-sidebar');
+        });
+    }
+
+    if (closeIcon && sideBar) {
+        closeIcon.addEventListener('click', () => {
+            sideBar.classList.remove('open-sidebar');
+            sideBar.classList.add('close-sidebar');
+        });
+    }
+
+    // Auto-close mobile drawer when any link is clicked
+    const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+    sidebarLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            if (sideBar && sideBar.classList.contains('open-sidebar')) {
+                sideBar.classList.remove('open-sidebar');
+                sideBar.classList.add('close-sidebar');
+            }
+        });
     });
 });
-
-// Sidebar elements (add guards)
-if(menu && sideBar){
-    menu.addEventListener('click', function(){
-        sideBar.classList.remove('close-sidebar');
-        sideBar.classList.add('open-sidebar');
-    });
-}
-
-if(closeIcon && sideBar){
-    closeIcon.addEventListener('click', function(){
-        sideBar.classList.remove('open-sidebar');
-        sideBar.classList.add('close-sidebar');
-    });
-}

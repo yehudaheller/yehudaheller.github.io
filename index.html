@@ -4,202 +4,340 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yehuda Heller — Software Engineer</title>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets & Icons -->
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <!-- Interactive Ambient Backlight Glow -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Top Edge Ambient Spotlight (Grok Style) -->
+    <div class="top-spotlight"></div>
+
     <div class="container">
-        <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
-
-
-
-        <header data-aos="fade-down" data-aos-duration="2000">
+        <!-- Floating Glassmorphic Header -->
+        <header>
             <div class="left">
-                <img src="hero.jpg" alt="logo">
-                <h2><span style="color: #72a1dea2;">Yehuda</span> Heller</h2>
-                <p class="header-sub">Software Engineer — M.Sc. (in progress) in Computer Science</p>
+                <div class="logo-wrap">
+                    <img src="hero.jpg" alt="Yehuda Heller Logo">
+                </div>
+                <h2><span>Yehuda</span> Heller</h2>
+                <p class="header-sub">Software Engineer — M.Sc. CS (Ongoing)</p>
             </div>
 
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#availability">Availability</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="box-icons">
-                <p><i class='bx bxl-youtube'></i></p>
-                <p><i class='bx bxl-github'></i></p>
-                <p><i class='bx bxl-linkedin-square'></i></p>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
             </div>
 
-            <div class="menu-icon">
-                <i class='bx bx-menu'></i>
+            <div class="menu-icon" aria-label="Toggle Mobile Menu">
+                <i class="bx bx-menu"></i>
             </div>            
         </header>
+
+        <!-- Mobile Drawer Sidebar -->
         <div class="sidebar">
-            <div class="close-icon">
-                <i class='bx bx-x'></i>
+            <div class="close-icon" aria-label="Close Mobile Menu">
+                <i class="bx bx-x"></i>
             </div>
             
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#availability">Availability</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="social-sidebar">
-                <a><i class='bx bxl-youtube'></i></a>
-                <a><i class='bx bxl-github'></i></a>
-                <a><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
             </div>
         </div>
 
-        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
-            <video autoplay loop muted playsinline src="videos/blackhole.mp4"></video>
-        </div>
-
-        <section class="hero ">
+        <!-- Hero Section -->
+        <section class="hero" id="about">
             <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
-                <div class="hero-info-title" >
-                    <i class='bx bxl-sketch'></i>
-                    Software Engineer Portfolio
+                <h1 data-aos="fade-right" data-aos-duration="1500">
+                    Yehuda Heller <br><span class="gradient-text">Software Engineer</span>
+                </h1>
+
+                <p>
+                    I'm a software engineer specializing in <strong>artificial intelligence</strong>, <strong>Android applications</strong>, <strong>Edge AI</strong>, <strong>web applications</strong>, and <strong>embedded systems</strong>. 
+                    Currently completing my <strong>M.Sc. in Computer Science</strong>; holder of a B.Sc. in Computer Science, Electronic Engineering credentials, and advanced software development trainings.
+                </p>
+
+                <div class="hero-ctas">
+                    <a class="contact-btn shimmer-btn" href="mailto:yehudaheller10@gmail.com" aria-label="Email Yehuda Heller">
+                        <i class="bx bx-send"></i> Contact Me
+                    </a>
+                    <a class="secondary-btn" href="#projects">
+                        Explore Work <i class="bx bx-down-arrow-alt"></i>
+                    </a>
                 </div>
-
-                <h1 data-aos="fade-right" data-aos-duration="3000">Yehuda Heller — Software Engineer</h1>
-
-                <p>I'm a software engineer specializing in artificial intelligence, Android applications, Edge AI, web applications, and embedded systems. M.Sc. (ongoing) in Computer Science; B.Sc. in Computer Science; Electronic practical engineer; advanced software development courses and trainings.</p>
-
-                <a class="contact-btn" href="mailto:yehudaheller10@gmail.com" aria-label="Email Yehuda Heller"><i class='bx bx-send' ></i> Contact Me</a>
             </div>
             
-            <div class="skills-video-box " >
-                <video class="skills-video autoBlur" autoplay loop muted playsinline src="videos/hero-video.mp4"></video>
+            <!-- Custom Blended Photo Frame (Faded Black Background) -->
+            <div class="hero-portrait-frame autoBlur" data-aos="fade-left" data-aos-duration="1200">
+                <div class="ambient-nebula-glow"></div>
+                <img class="hero-me-photo" src="me.jpg" alt="Yehuda Heller Profile Photo">
             </div>
         
-            <div class="scroll-down"></div>
+            <div class="scroll-down" aria-label="Scroll Down"></div>
         </section>
 
-        <!-- Projects placed immediately after hero as requested -->
-        <section class="my-project">
-            <h1 class="section-title autoDisplay">Some Of My Projects</h1>
+        <!-- Projects Grid Section -->
+        <section class="my-project" id="projects">
+            <h1 class="section-title autoDisplay" data-aos="fade-up">Some of my recent projects</h1>
+            <p class="section-subtitle autoDisplay" data-aos="fade-up">A showcase of deep learning, computer vision, web applications, and Edge AI development</p>
 
             <div class="projects-grid">
-                <!-- Project 1: keep existing video, autoplay muted -->
-                <div class="project-card">
-                    <div class="project-vidbox">
-                        <video loop id="projectVideo1" src="videos/project1.mp4" autoplay muted playsinline></video>
+                <!-- Project 1: Chicken Pecking & Counting Behavior (Dual Videos Side-by-Side) -->
+                <div class="project-card double-width" data-aos="fade-up" data-aos-delay="50">
+                    <div class="project-vidbox-split">
+                        <div class="vid-half">
+                            <video loop autoplay muted playsinline src="videos/project1.mp4"></video>
+                            <span class="video-label-tag">Raw Input Footage</span>
+                        </div>
+                        <div class="vid-half">
+                            <video loop autoplay muted playsinline src="videos/algorithm output.mp4"></video>
+                            <span class="video-label-tag">Algorithm Output</span>
+                        </div>
+                        <span class="media-type-badge"><i class="bx bx-video"></i> Dual Video Demo</span>
                     </div>
-                    <div class="project-info fadein-left">
-                        <h1>Neural Network for Detecting Pecking Behavior and Counting Chickens</h1>
-                        <p>I trained a neural network to detect pecking interactions between chickens in video footage and to count chickens standing on cooling perches. Initial experiments on a small video set were successful, and the project is ongoing pending a larger dataset.</p>
-                        <button><i class='bx bx-link-external' ></i> View</button>
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Computer Vision</span>
+                            <span>YOLO / PyTorch</span>
+                            <span>Python</span>
+                            <span>Real-time Object Detection</span>
+                        </div>
+                        <h1>Neural Network for Pecking Behavior & Chicken Counting</h1>
+                        <p>Trained a neural network to detect pecking interactions in video footage and count chickens on cooling perches. Conducted successful initial experiments on a specialized video dataset to optimize detection accuracy in real-time farming scenarios. The side-by-side videos above demonstrate the raw input compared to the real-time AI keypoint tracking and classification outputs.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
                     </div>
                 </div>
 
-                <!-- Project 2: cow detection image -->
-                <div class="project-card">
+                <!-- Project: Avocado Project (Image) -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-vidbox project-image">
+                        <img src="projects/Avocado project.jpg" alt="Avocado Hyperspectral Computer Vision Analysis" />
+                        <span class="media-type-badge"><i class="bx bx-image"></i> Spectral Analysis</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Hyperspectral CV</span>
+                            <span>SPPy / NumPy</span>
+                            <span>SciPy / scikit-learn</span>
+                            <span>Dimensionality Reduction</span>
+                        </div>
+                        <h1>Avocado Hyperspectral Quality Analysis</h1>
+                        <p>A Python-driven hyperspectral computer vision pipeline utilizing the spectral (<strong>SPPy</strong>) library for ENVI data cube manipulation and <strong>NumPy</strong> for high-dimensional tensor operations. The architecture leverages <strong>SciPy</strong> for statistical feature ranking via independent t-tests and <strong>scikit-learn</strong> to deploy optimized Random Forest and Decision Tree classifiers. By extracting <strong>GINI impurity</strong> feature importance and utilizing <strong>Elbow Curve analysis</strong>, the system compresses a 204-band spectral contract down to an ultra-lightweight, illumination-invariant 2-band arithmetical ratio, increasing inference speed by 67× while maintaining an 89.1% F1-macro classification score.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project: Dates Palm Project (Image) -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-vidbox project-image">
+                        <img src="projects/dates palm project.bmp" alt="Dates Palm Yield Forecasting Interface" />
+                        <span class="media-type-badge"><i class="bx bx-image"></i> Interface Analysis</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Machine Learning</span>
+                            <span>Random Forest / XGBoost</span>
+                            <span>Google Cloud Functions</span>
+                            <span>Edge Analytics</span>
+                        </div>
+                        <h1>Dates Palm Yield Forecasting & Skin Analysis</h1>
+                        <p>A precision agriculture web application featuring a hybrid ML architecture: it couples real-time, <strong>client-side inference</strong> (Random Forest and XGBoost) for date palm yield forecasting with a serverless cloud tier powered by <strong>Google Cloud Functions</strong> for skin-mode (skin separation) prediction, delivering zero-latency predictive analytics from dynamic agronomic and climate inputs.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project: Hetz Tomato Research Data Pooling System (Side-by-Side BMP + MP4) -->
+                <div class="project-card double-width" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-vidbox-split">
+                        <div class="vid-half">
+                            <img src="projects/hetz-tomato-project.bmp" alt="Hetz Tomato Interface Screenshot" />
+                            <span class="video-label-tag">Interface Overview</span>
+                        </div>
+                        <div class="vid-half">
+                            <video loop autoplay muted playsinline src="videos/hetz-tomato-video.mp4"></video>
+                            <span class="video-label-tag">Software Walkthrough</span>
+                        </div>
+                        <span class="media-type-badge"><i class="bx bx-window-alt"></i> App Demo</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Fullstack Cloud</span>
+                            <span>Firebase Firestore / Storage</span>
+                            <span>Leaflet GIS</span>
+                            <span>Chart.js BI</span>
+                        </div>
+                        <h1>Research Data Pooling System</h1>
+                        <p>A responsive Full-Stack web application powered by <strong>Firebase Suite</strong>, utilizing <strong>Cloud Firestore NoSQL</strong> for dynamic data modeling and <strong>Firebase Storage</strong> for secure file management. Server-side access control is strictly enforced via context-aware <strong>Firebase Security Rules</strong>. Built with HTML5, CSS3, and <strong>Modern Vanilla JS (ES6)</strong>, the client integrates <strong>Chart.js</strong> for interactive BI analytics, <strong>Leaflet (OSM)</strong> for GPS-based research mapping, and a debounced <strong>auto-save mechanism</strong> with form signature verification to prevent data loss.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
+                    </div>
+                </div>
+
+                <!-- Project 2: Cow Head Position Analysis (Image) -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="project-vidbox project-image">
                         <img src="projects/cow detection.bmp" alt="Cow Head Position Analysis" />
+                        <span class="media-type-badge"><i class="bx bx-image"></i> Keypoint Analysis</span>
                     </div>
-                    <div class="project-info fadein-left">
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Deep Learning</span>
+                            <span>Keypoint Regression</span>
+                            <span>PyTorch</span>
+                        </div>
                         <h1>Neural Network for Cow Head Position Analysis</h1>
-                        <p>I annotated a large dataset of cow images and trained a neural network capable of detecting the head, eyes (left/right), nose, and mouth (left/right). Using the trained model, I processed over 250,000 images to extract precise spatial keypoints for each cow.</p>
-                        <button><i class='bx bx-link-external' ></i> View</button>
+                        <p>Annotated a custom dataset of cow images and engineered a deep learning model to pinpoint spatial coordinates of the head, eyes, nose, and mouth. Processed over 250,000 images to extract precise spatial keypoints for downstream behavior analysis.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
                     </div>
                 </div>
 
-                <!-- Project 3: activity reporting system image -->
-                <div class="project-card">
+                <!-- Project 3: Work Report System (Image) -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-vidbox project-image">
                         <img src="projects/web app- work report system.bmp" alt="Activity Reporting System" />
+                        <span class="media-type-badge"><i class="bx bx-desktop"></i> Production Web App</span>
                     </div>
-                    <div class="project-info fadein-left">
-                        <h1>Activity Reporting System for Engineers</h1>
-                        <p>I developed a full web-based system that enables research engineers to report daily or weekly activities and provides an admin interface for management. The system is currently in regular daily use.</p>
-                        <button><i class='bx bx-link-external' ></i> View</button>
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Fullstack Web</span>
+                            <span>Node.js / Express</span>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <h1>Activity Reporting System for Research Engineers</h1>
+                        <p>Developed a full web-based enterprise application enabling research engineers to log daily/weekly engineering tasks. Built a complete dashboard for administrators to view reports, generate metrics, and track productivity. Fully active and in daily use.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
                     </div>
                 </div>
 
-                <!-- Project 4: microscopy app image -->
-                <div class="project-card">
+                <!-- Project 4: Android Microscopy plate analyzer (Image) -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="350">
                     <div class="project-vidbox project-image">
                         <img src="projects/microbiology plate analyzer.bmp" alt="Microscopic Well Analysis" />
+                        <span class="media-type-badge"><i class="bx bx-mobile-alt"></i> Android App</span>
                     </div>
-                    <div class="project-info fadein-left">
-                        <h1>Android Application for Microscopic Well Analysis</h1>
-                        <p>I developed an Android application that captures or uploads microscope plate images and automatically analyzes well intensities, similar to ImageJ. The app supports RGB, Luma, and Blue-Channel analysis and achieves accuracy comparable to ImageJ.</p>
-                        <button><i class='bx bx-link-external' ></i> View</button>
+                    <div class="project-info">
+                        <div class="tech-badges">
+                            <span>Android Dev</span>
+                            <span>Image Processing</span>
+                            <span>Edge Analysis</span>
+                        </div>
+                        <h1>Android App for Microscopic Well Analysis</h1>
+                        <p>Developed a native mobile application that captures and analyzes microscope plate wells to compute intensity values (similar to desktop ImageJ). Implemented support for RGB, Luma, and Blue-Channel analysis, matching desktop computer accuracy.</p>
+                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="info-section">
-            <h1 class="section-title autoDisplay">Availability</h1>
+        <!-- Availability & Globe Section -->
+        <section class="info-section" id="availability">
+            <h1 class="section-title autoDisplay" data-aos="fade-up">Global Collaboration</h1>
             <div class="info-cards">
-                <div class="card">
-                    <h1>Remote and Collaborative</h1>
-                    <p>Based in Israel. Available for work in Artificial Intelligence, Android app development, Web development, and Electronics. Open to remote work and international collaboration. Flexible with time zones.</p>
-
-                    <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
-
-                    <a class="contact-btn" href="mailto:yehudaheller10@gmail.com" aria-label="Email Yehuda Heller"><i class='bx bx-send'></i> Contact Me</a>
+                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="card-text-block">
+                        <h1>Remote and Collaborative Work</h1>
+                        <p>Based in Israel. Available for advanced engineering positions and consulting in <strong>Artificial Intelligence</strong>, <strong>Android App Development</strong>, <strong>Web Architectures</strong>, and <strong>Embedded Systems</strong>. Open to international client collaborations, matching cross-border timezone schedules seamlessly.</p>
+                        <a class="contact-btn" href="mailto:yehudaheller10@gmail.com" aria-label="Email Yehuda Heller">
+                            <i class="bx bx-send"></i> Contact Me
+                        </a>
+                    </div>
+                    <div class="card-video-block">
+                        <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
+                    </div>
                 </div>
             </div>
         </section>
 
-         <section class="contact-section">
-             <h1 class="section-title autoDisplay">Get In Touch</h1>
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+             <h1 class="section-title autoDisplay" data-aos="fade-up">Get In Touch</h1>
+             <p class="section-subtitle autoDisplay" data-aos="fade-up">Let's discuss new opportunities, technical collaborations, or consulting projects.</p>
 
-             <div class="contact-content autoBlur">
+             <div class="contact-content autoBlur" data-aos="fade-up" data-aos-duration="1000">
                  <div class="contact-intro">
                      <h2>Yehuda Heller</h2>
-                     <p class="contact-subtitle">Software Engineer | M.Sc. Computer Science</p>
-                     <p class="contact-description">I'm always interested in discussing new opportunities, collaborations, and innovative projects. Feel free to reach out!</p>
+                     <p class="contact-subtitle"><span class="gradient-text">Software Engineer | M.Sc. Computer Science Candidate</span></p>
+                     <p class="contact-description">Feel free to reach out via email or connect with me on LinkedIn. I generally respond within a few hours.</p>
                  </div>
 
                  <div class="contact-details">
-                     <div class="contact-item">
+                     <!-- LinkedIn Card -->
+                     <a class="contact-item" href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" rel="noopener noreferrer">
                          <div class="contact-icon">
-                             <i class='bx bxl-linkedin-square'></i>
+                             <i class="bx bxl-linkedin-square"></i>
                          </div>
                          <div class="contact-text">
-                             <h3>LinkedIn</h3>
-                             <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" rel="noopener noreferrer">linkedin.com/in/yehuda-heller</a>
+                             <h3>LinkedIn Connection</h3>
+                             <span>linkedin.com/in/yehuda-heller</span>
                          </div>
-                     </div>
+                         <div class="contact-arrow">
+                             <i class="bx bx-chevron-right"></i>
+                         </div>
+                     </a>
 
-                     <div class="contact-item">
+                     <!-- Email Card -->
+                     <a class="contact-item" href="mailto:yehudaheller10@gmail.com">
                          <div class="contact-icon">
-                             <i class='bx bx-envelope'></i>
+                             <i class="bx bx-envelope"></i>
                          </div>
                          <div class="contact-text">
-                             <h3>Email</h3>
-                             <a href="mailto:yehudaheller10@gmail.com">yehudaheller10@gmail.com</a>
+                             <h3>Direct Email</h3>
+                             <span>yehudaheller10@gmail.com</span>
                          </div>
-                     </div>
+                         <div class="contact-arrow">
+                             <i class="bx bx-chevron-right"></i>
+                         </div>
+                     </a>
                  </div>
              </div>
+        </section>
 
-         </section>
-
-         <section class="footer">
-
+        <!-- Footer -->
+        <footer class="footer">
+             <p class="footer-credit">© 2026 Yehuda Heller. Built with premium clean code & advanced AI styling.</p>
              <div class="box-icons">
-                 <p><i class='bx bxl-youtube'></i></p>
-                 <p><i class='bx bxl-github'></i></p>
-                 <p><i class='bx bxl-linkedin-square'></i></p>
+                 <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                 <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                 <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
              </div>
-         </section>
-
-
-     </div>
-     <script src="app.js"></script>
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script >
-       AOS.init();
-     </script>
- </body>
- </html>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 80,
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+</html>
