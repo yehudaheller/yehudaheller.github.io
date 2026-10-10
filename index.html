@@ -3,341 +3,467 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yehuda Heller — Software Engineer</title>
-    
-    <!-- Premium Google Fonts -->
+    <title>Yehuda Heller — Software Engineer · AI, Edge AI &amp; Embedded Systems</title>
+    <meta name="description" content="Yehuda Heller is a software engineer specialising in artificial intelligence, computer vision, Edge AI, native Android and embedded systems.">
+    <meta name="theme-color" content="#0c0c0c">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yehuda Heller — Software Engineer">
+    <meta property="og:description" content="AI, computer vision, Edge AI, native Android and embedded systems — from research to production.">
+    <meta property="og:image" content="assets/portrait.jpg">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c0c0c'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23f3f2ee'%3EYH%3C/text%3E%3C/svg%3E">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheets & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <!-- Interactive Ambient Backlight Glow -->
-    <div class="mouse-glow" id="mouseGlow"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Top Edge Ambient Spotlight (Grok Style) -->
-    <div class="top-spotlight"></div>
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header is-dark at-top" id="siteHeader">
+        <div class="container header-inner">
+            <a class="wordmark" href="#top" aria-label="Yehuda Heller — home">
+                Yehuda Heller<span class="wordmark-role">Software Engineer</span>
+            </a>
 
-    <div class="container">
-        <!-- Floating Glassmorphic Header -->
-        <header>
-            <div class="left">
-                <div class="logo-wrap">
-                    <img src="hero.jpg" alt="Yehuda Heller Logo">
-                </div>
-                <h2><span>Yehuda</span> Heller</h2>
-                <p class="header-sub">Software Engineer — M.Sc. CS (Ongoing)</p>
-            </div>
+            <nav class="nav" aria-label="Primary">
+                <a href="#profile">Profile</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#availability">Availability</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a class="btn btn-ghost header-cta" href="mailto:yehudaheller10@gmail.com">Get in touch</a>
 
-            <div class="box-icons">
-                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
-                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
-            </div>
-
-            <div class="menu-icon" aria-label="Toggle Mobile Menu">
-                <i class="bx bx-menu"></i>
-            </div>            
-        </header>
-
-        <!-- Mobile Drawer Sidebar -->
-        <div class="sidebar">
-            <div class="close-icon" aria-label="Close Mobile Menu">
-                <i class="bx bx-x"></i>
-            </div>
-            
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#availability">Availability</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="social-sidebar">
-                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
-                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
-            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span></span><span></span>
+            </button>
         </div>
+    </header>
 
-        <!-- Hero Section -->
-        <section class="hero" id="about">
-            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
-                <h1 data-aos="fade-right" data-aos-duration="1500">
-                    Yehuda Heller <br><span class="gradient-text">Software Engineer</span>
-                </h1>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <nav class="container" aria-label="Mobile">
+            <a href="#profile"><span>01</span>Profile</a>
+            <a href="#expertise"><span>02</span>Expertise</a>
+            <a href="#work"><span>03</span>Work</a>
+            <a href="#contact"><span>04</span>Contact</a>
+        </nav>
+        <div class="container mobile-menu-foot">
+            <a href="mailto:yehudaheller10@gmail.com">yehudaheller10@gmail.com</a>
+            <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+    </div>
 
-                <p>
-                    I'm a software engineer specializing in <strong>artificial intelligence</strong>, <strong>Android applications</strong>, <strong>Edge AI</strong>, <strong>web applications</strong>, and <strong>embedded systems</strong>. 
-                    Currently completing my <strong>M.Sc. in Computer Science</strong>; holder of a B.Sc. in Computer Science, Electronic Engineering credentials, and advanced software development trainings.
-                </p>
-
-                <div class="hero-ctas">
-                    <a class="contact-btn shimmer-btn" href="mailto:yehudaheller10@gmail.com" aria-label="Email Yehuda Heller">
-                        <i class="bx bx-send"></i> Contact Me
-                    </a>
-                    <a class="secondary-btn" href="#projects">
-                        Explore Work <i class="bx bx-down-arrow-alt"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Custom Blended Photo Frame (Faded Black Background) -->
-            <div class="hero-portrait-frame autoBlur" data-aos="fade-left" data-aos-duration="1200">
-                <div class="ambient-nebula-glow"></div>
-                <img class="hero-me-photo" src="me.jpg" alt="Yehuda Heller Profile Photo">
-            </div>
-        
-            <div class="scroll-down" aria-label="Scroll Down"></div>
-        </section>
-
-        <!-- Projects Grid Section -->
-        <section class="my-project" id="projects">
-            <h1 class="section-title autoDisplay" data-aos="fade-up">Some of my recent projects</h1>
-            <p class="section-subtitle autoDisplay" data-aos="fade-up">A showcase of deep learning, computer vision, web applications, and Edge AI development</p>
-
-            <div class="projects-grid">
-                <!-- Project 1: Chicken Pecking & Counting Behavior (Dual Videos Side-by-Side) -->
-                <div class="project-card double-width" data-aos="fade-up" data-aos-delay="50">
-                    <div class="project-vidbox-split">
-                        <div class="vid-half">
-                            <video loop autoplay muted playsinline src="videos/project1.mp4"></video>
-                            <span class="video-label-tag">Raw Input Footage</span>
-                        </div>
-                        <div class="vid-half">
-                            <video loop autoplay muted playsinline src="videos/algorithm output.mp4"></video>
-                            <span class="video-label-tag">Algorithm Output</span>
-                        </div>
-                        <span class="media-type-badge"><i class="bx bx-video"></i> Dual Video Demo</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Computer Vision</span>
-                            <span>YOLO / PyTorch</span>
-                            <span>Python</span>
-                            <span>Real-time Object Detection</span>
-                        </div>
-                        <h1>Neural Network for Pecking Behavior & Chicken Counting</h1>
-                        <p>Trained a neural network to detect pecking interactions in video footage and count chickens on cooling perches. Conducted successful initial experiments on a specialized video dataset to optimize detection accuracy in real-time farming scenarios. The side-by-side videos above demonstrate the raw input compared to the real-time AI keypoint tracking and classification outputs.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project: Avocado Project (Image) -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-vidbox project-image">
-                        <img src="projects/Avocado project.jpg" alt="Avocado Hyperspectral Computer Vision Analysis" />
-                        <span class="media-type-badge"><i class="bx bx-image"></i> Spectral Analysis</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Hyperspectral CV</span>
-                            <span>SPPy / NumPy</span>
-                            <span>SciPy / scikit-learn</span>
-                            <span>Dimensionality Reduction</span>
-                        </div>
-                        <h1>Avocado Hyperspectral Quality Analysis</h1>
-                        <p>A Python-driven hyperspectral computer vision pipeline utilizing the spectral (<strong>SPPy</strong>) library for ENVI data cube manipulation and <strong>NumPy</strong> for high-dimensional tensor operations. The architecture leverages <strong>SciPy</strong> for statistical feature ranking via independent t-tests and <strong>scikit-learn</strong> to deploy optimized Random Forest and Decision Tree classifiers. By extracting <strong>GINI impurity</strong> feature importance and utilizing <strong>Elbow Curve analysis</strong>, the system compresses a 204-band spectral contract down to an ultra-lightweight, illumination-invariant 2-band arithmetical ratio, increasing inference speed by 67× while maintaining an 89.1% F1-macro classification score.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project: Dates Palm Project (Image) -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="project-vidbox project-image">
-                        <img src="projects/dates palm project.bmp" alt="Dates Palm Yield Forecasting Interface" />
-                        <span class="media-type-badge"><i class="bx bx-image"></i> Interface Analysis</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Machine Learning</span>
-                            <span>Random Forest / XGBoost</span>
-                            <span>Google Cloud Functions</span>
-                            <span>Edge Analytics</span>
-                        </div>
-                        <h1>Dates Palm Yield Forecasting & Skin Analysis</h1>
-                        <p>A precision agriculture web application featuring a hybrid ML architecture: it couples real-time, <strong>client-side inference</strong> (Random Forest and XGBoost) for date palm yield forecasting with a serverless cloud tier powered by <strong>Google Cloud Functions</strong> for skin-mode (skin separation) prediction, delivering zero-latency predictive analytics from dynamic agronomic and climate inputs.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project: Hetz Tomato Research Data Pooling System (Side-by-Side BMP + MP4) -->
-                <div class="project-card double-width" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-vidbox-split">
-                        <div class="vid-half">
-                            <img src="projects/hetz-tomato-project.bmp" alt="Hetz Tomato Interface Screenshot" />
-                            <span class="video-label-tag">Interface Overview</span>
-                        </div>
-                        <div class="vid-half">
-                            <video loop autoplay muted playsinline src="videos/hetz-tomato-video.mp4"></video>
-                            <span class="video-label-tag">Software Walkthrough</span>
-                        </div>
-                        <span class="media-type-badge"><i class="bx bx-window-alt"></i> App Demo</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Fullstack Cloud</span>
-                            <span>Firebase Firestore / Storage</span>
-                            <span>Leaflet GIS</span>
-                            <span>Chart.js BI</span>
-                        </div>
-                        <h1>Research Data Pooling System</h1>
-                        <p>A responsive Full-Stack web application powered by <strong>Firebase Suite</strong>, utilizing <strong>Cloud Firestore NoSQL</strong> for dynamic data modeling and <strong>Firebase Storage</strong> for secure file management. Server-side access control is strictly enforced via context-aware <strong>Firebase Security Rules</strong>. Built with HTML5, CSS3, and <strong>Modern Vanilla JS (ES6)</strong>, the client integrates <strong>Chart.js</strong> for interactive BI analytics, <strong>Leaflet (OSM)</strong> for GPS-based research mapping, and a debounced <strong>auto-save mechanism</strong> with form signature verification to prevent data loss.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 2: Cow Head Position Analysis (Image) -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="project-vidbox project-image">
-                        <img src="projects/cow detection.bmp" alt="Cow Head Position Analysis" />
-                        <span class="media-type-badge"><i class="bx bx-image"></i> Keypoint Analysis</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Deep Learning</span>
-                            <span>Keypoint Regression</span>
-                            <span>PyTorch</span>
-                        </div>
-                        <h1>Neural Network for Cow Head Position Analysis</h1>
-                        <p>Annotated a custom dataset of cow images and engineered a deep learning model to pinpoint spatial coordinates of the head, eyes, nose, and mouth. Processed over 250,000 images to extract precise spatial keypoints for downstream behavior analysis.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 3: Work Report System (Image) -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-vidbox project-image">
-                        <img src="projects/web app- work report system.bmp" alt="Activity Reporting System" />
-                        <span class="media-type-badge"><i class="bx bx-desktop"></i> Production Web App</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Fullstack Web</span>
-                            <span>Node.js / Express</span>
-                            <span>UI/UX Design</span>
-                        </div>
-                        <h1>Activity Reporting System for Research Engineers</h1>
-                        <p>Developed a full web-based enterprise application enabling research engineers to log daily/weekly engineering tasks. Built a complete dashboard for administrators to view reports, generate metrics, and track productivity. Fully active and in daily use.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 4: Android Microscopy plate analyzer (Image) -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="350">
-                    <div class="project-vidbox project-image">
-                        <img src="projects/microbiology plate analyzer.bmp" alt="Microscopic Well Analysis" />
-                        <span class="media-type-badge"><i class="bx bx-mobile-alt"></i> Android App</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="tech-badges">
-                            <span>Android Dev</span>
-                            <span>Image Processing</span>
-                            <span>Edge Analysis</span>
-                        </div>
-                        <h1>Android App for Microscopic Well Analysis</h1>
-                        <p>Developed a native mobile application that captures and analyzes microscope plate wells to compute intensity values (similar to desktop ImageJ). Implemented support for RGB, Luma, and Blue-Channel analysis, matching desktop computer accuracy.</p>
-                        <button class="project-action-btn"><i class="bx bx-link-external"></i> View Details</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Availability & Globe Section -->
-        <section class="info-section" id="availability">
-            <h1 class="section-title autoDisplay" data-aos="fade-up">Global Collaboration</h1>
-            <div class="info-cards">
-                <div class="card" data-aos="zoom-in" data-aos-duration="1000">
-                    <div class="card-text-block">
-                        <h1>Remote and Collaborative Work</h1>
-                        <p>Based in Israel. Available for advanced engineering positions and consulting in <strong>Artificial Intelligence</strong>, <strong>Android App Development</strong>, <strong>Web Architectures</strong>, and <strong>Embedded Systems</strong>. Open to international client collaborations, matching cross-border timezone schedules seamlessly.</p>
-                        <a class="contact-btn" href="mailto:yehudaheller10@gmail.com" aria-label="Email Yehuda Heller">
-                            <i class="bx bx-send"></i> Contact Me
+    <main id="main">
+        <!-- ============================== HERO ============================== -->
+        <section class="hero" id="top" data-theme="dark">
+            <div class="container grid-12 hero-grid">
+                <div class="hero-copy">
+                    <h1 class="hero-title">
+                        <span class="line hero-in" style="--d:1">Intelligent systems,</span>
+                        <span class="line hero-in" style="--d:2">engineered from the</span>
+                        <span class="line hero-in" style="--d:3"><em>edge</em> to the <em>cloud.</em></span>
+                    </h1>
+                    <p class="hero-lead hero-in" style="--d:4">
+                        I’m Yehuda Heller, a software engineer specialising in artificial intelligence,
+                        computer vision, Edge AI, native Android and embedded systems. I turn
+                        research-grade models into dependable software that runs in production.
+                    </p>
+                    <div class="hero-actions hero-in" style="--d:5">
+                        <a class="btn btn-light" href="#work">
+                            View selected work
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a class="link-arrow" href="#contact">
+                            Start a conversation
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                         </a>
                     </div>
-                    <div class="card-video-block">
-                        <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
+                </div>
+
+                <figure class="hero-portrait hero-in" style="--d:2">
+                    <img src="assets/portrait.jpg" alt="Portrait of Yehuda Heller" width="476" height="571" fetchpriority="high">
+                </figure>
+            </div>
+
+            <div class="container">
+                <dl class="figures">
+                    <div class="figure">
+                        <dt><span data-count="7">7</span>+</dt>
+                        <dd>AI &amp; software projects delivered</dd>
+                    </div>
+                    <div class="figure">
+                        <dt><span data-count="250">250</span>K+</dt>
+                        <dd>Images processed in production pipelines</dd>
+                    </div>
+                    <div class="figure">
+                        <dt><span data-count="67">67</span>×</dt>
+                        <dd>Faster inference by cutting 204 spectral bands to 2</dd>
+                    </div>
+                    <div class="figure">
+                        <dt>M.Sc.</dt>
+                        <dd>Computer Science — in progress</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============================== SHOWREEL ============================== -->
+        <section class="reel" aria-labelledby="reelTitle" data-theme="dark">
+            <div class="container">
+                <div class="reel-head reveal">
+                    <h2 class="reel-title" id="reelTitle">Selected work, <em>in motion.</em></h2>
+                    <a class="link-arrow" href="#work">
+                        All projects
+                        <svg class="icon icon-down" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+                    </a>
+                </div>
+
+                <div class="reel-grid reveal">
+                    <a class="reel-item is-wide" href="#case-poultry">
+                        <video loop muted playsinline preload="none" poster="assets/posters/chicken-tracking.jpg" src="videos/project1.mp4" aria-hidden="true"></video>
+                        <span class="reel-caption">
+                            <span class="reel-meta">01 — Computer vision</span>
+                            <span class="reel-name">Multi-object ID tracking
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                            </span>
+                        </span>
+                    </a>
+                    <a class="reel-item is-wide" href="#case-poultry">
+                        <video loop muted playsinline preload="none" poster="assets/posters/chicken-output.jpg" src="videos/algorithm output.mp4" aria-hidden="true"></video>
+                        <span class="reel-caption">
+                            <span class="reel-meta">01 — Behaviour AI</span>
+                            <span class="reel-name">Pecking detection, aggressor in red
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                            </span>
+                        </span>
+                    </a>
+                    <a class="reel-item is-split" href="#case-avocado">
+                        <span class="reel-split-media">
+                            <img src="assets/work/avocado-hyperspectral.jpg" alt="" width="1100" height="581" loading="lazy">
+                        </span>
+                        <span class="reel-split-text">
+                            <span class="reel-meta">02 — Hyperspectral imaging</span>
+                            <span class="reel-stat">204 <span class="reel-stat-arrow">→</span> 2</span>
+                            <span class="reel-stat-label">Wavelengths needed to detect an avocado — the basis for a purpose-built two-wavelength camera.</span>
+                            <span class="reel-name">Avocado detection
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                            </span>
+                        </span>
+                    </a>
+                    <a class="reel-item is-tall" href="#case-research">
+                        <video loop muted playsinline preload="none" poster="assets/posters/research-walkthrough.jpg" src="videos/hetz-tomato-video.mp4" aria-hidden="true"></video>
+                        <span class="reel-caption">
+                            <span class="reel-meta">05 — Full-stack</span>
+                            <span class="reel-name">Research platform</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== PROFILE ============================== -->
+        <section class="section" id="profile">
+            <div class="container grid-12">
+                <p class="section-label reveal"><span>01</span>Profile</p>
+
+                <div class="section-content">
+                    <p class="statement reveal">
+                        I work where research meets production — translating machine-learning models into
+                        reliable software that runs where it matters: <em>on the device, in the browser
+                        and in the cloud.</em>
+                    </p>
+
+                    <div class="profile-cols">
+                        <div class="profile-text reveal">
+                            <p>
+                                My background combines a B.Sc. in Computer Science with Electronic Engineering
+                                credentials, which lets me work comfortably across the full stack — from
+                                embedded hardware and on-device inference to cloud services and the
+                                interfaces people use every day.
+                            </p>
+                            <p>
+                                I have delivered computer-vision, machine-learning and full-stack systems for
+                                research teams, with a consistent focus on measurable outcomes: faster
+                                inference, higher accuracy and tools that are used daily. I am currently
+                                pursuing an M.Sc. in Computer Science.
+                            </p>
+                        </div>
+
+                        <dl class="facts reveal">
+                            <div>
+                                <dt>Education</dt>
+                                <dd>B.Sc. Computer Science<br>Electronic Engineering credentials<br>M.Sc. Computer Science — ongoing</dd>
+                            </div>
+                            <div>
+                                <dt>Focus</dt>
+                                <dd>AI &amp; Computer Vision<br>Edge AI &amp; Embedded Systems<br>Native Android · Full-stack &amp; Cloud</dd>
+                            </div>
+                            <div>
+                                <dt>Location</dt>
+                                <dd>Israel<br>Working remotely across time zones</dd>
+                            </div>
+                        </dl>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-             <h1 class="section-title autoDisplay" data-aos="fade-up">Get In Touch</h1>
-             <p class="section-subtitle autoDisplay" data-aos="fade-up">Let's discuss new opportunities, technical collaborations, or consulting projects.</p>
+        <!-- ============================== EXPERTISE ============================== -->
+        <section class="section section-alt" id="expertise">
+            <div class="container grid-12">
+                <p class="section-label reveal"><span>02</span>Expertise</p>
 
-             <div class="contact-content autoBlur" data-aos="fade-up" data-aos-duration="1000">
-                 <div class="contact-intro">
-                     <h2>Yehuda Heller</h2>
-                     <p class="contact-subtitle"><span class="gradient-text">Software Engineer | M.Sc. Computer Science Candidate</span></p>
-                     <p class="contact-description">Feel free to reach out via email or connect with me on LinkedIn. I generally respond within a few hours.</p>
-                 </div>
+                <div class="section-content">
+                    <h2 class="section-title reveal">Four disciplines, <em>one integrated practice.</em></h2>
 
-                 <div class="contact-details">
-                     <!-- LinkedIn Card -->
-                     <a class="contact-item" href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" rel="noopener noreferrer">
-                         <div class="contact-icon">
-                             <i class="bx bxl-linkedin-square"></i>
-                         </div>
-                         <div class="contact-text">
-                             <h3>LinkedIn Connection</h3>
-                             <span>linkedin.com/in/yehuda-heller</span>
-                         </div>
-                         <div class="contact-arrow">
-                             <i class="bx bx-chevron-right"></i>
-                         </div>
-                     </a>
+                    <div class="expertise">
+                        <article class="capability reveal">
+                            <p class="capability-index">I</p>
+                            <h3>Artificial Intelligence &amp; Computer Vision</h3>
+                            <p>Deep-learning models for detection, multi-object tracking and keypoint regression, plus hyperspectral analysis and classical machine learning on real-world data.</p>
+                            <p class="capability-tools">Python · PyTorch · YOLO · NumPy · SciPy · scikit-learn · XGBoost</p>
+                        </article>
 
-                     <!-- Email Card -->
-                     <a class="contact-item" href="mailto:yehudaheller10@gmail.com">
-                         <div class="contact-icon">
-                             <i class="bx bx-envelope"></i>
-                         </div>
-                         <div class="contact-text">
-                             <h3>Direct Email</h3>
-                             <span>yehudaheller10@gmail.com</span>
-                         </div>
-                         <div class="contact-arrow">
-                             <i class="bx bx-chevron-right"></i>
-                         </div>
-                     </a>
-                 </div>
-             </div>
+                        <article class="capability reveal">
+                            <p class="capability-index">II</p>
+                            <h3>Edge AI &amp; Embedded Systems</h3>
+                            <p>Efficient inference close to the data — feature reduction and lean models that keep accuracy high while cutting compute, informed by a background in electronics.</p>
+                            <p class="capability-tools">Model optimisation · Embedded systems · Electronics</p>
+                        </article>
+
+                        <article class="capability reveal">
+                            <p class="capability-index">III</p>
+                            <h3>Native Android</h3>
+                            <p>Native mobile applications that capture and analyse images on-device, delivering desktop-grade scientific measurements in the field.</p>
+                            <p class="capability-tools">Android · On-device image processing</p>
+                        </article>
+
+                        <article class="capability reveal">
+                            <p class="capability-index">IV</p>
+                            <h3>Full-Stack &amp; Cloud</h3>
+                            <p>Production web applications, research data platforms and serverless ML back-ends — secure, well-modelled and built to be used every day.</p>
+                            <p class="capability-tools">Node.js · Express · Firebase · Google Cloud Functions · Chart.js · Leaflet</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-             <p class="footer-credit">© 2026 Yehuda Heller. Built with premium clean code & advanced AI styling.</p>
-             <div class="box-icons">
-                 <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-                 <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
-                 <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="bx bxl-youtube"></i></a>
-             </div>
-        </footer>
-    </div>
-    
+        <!-- ============================== WORK ============================== -->
+        <section class="section" id="work">
+            <div class="container grid-12">
+                <p class="section-label reveal"><span>03</span>Selected work</p>
+
+                <div class="section-content work-head">
+                    <h2 class="section-title reveal">Applied AI and software, <em>delivered to production.</em></h2>
+                    <p class="section-intro reveal">A selection of projects across agriculture, life sciences and operations — from computer-vision research to systems in daily use.</p>
+                </div>
+            </div>
+
+            <div class="container cases">
+                <!-- 01 — Feature -->
+                <article class="case case-feature reveal" id="case-poultry">
+                    <div class="case-media case-media-duo">
+                        <figure>
+                            <div class="frame frame-bleed">
+                                <video loop muted playsinline preload="none" poster="assets/posters/chicken-tracking.jpg" src="videos/project1.mp4" aria-label="Multi-object ID tracking of chickens"></video>
+                            </div>
+                            <figcaption><span>Fig. 01a</span>Multi-object ID tracking</figcaption>
+                        </figure>
+                        <figure>
+                            <div class="frame frame-bleed">
+                                <video loop muted playsinline preload="none" poster="assets/posters/chicken-output.jpg" src="videos/algorithm output.mp4" aria-label="Algorithm output with the aggressor highlighted in red"></video>
+                            </div>
+                            <figcaption><span>Fig. 01b</span>Algorithm output — aggressor highlighted in red</figcaption>
+                        </figure>
+                    </div>
+                    <div class="case-body">
+                        <div class="case-heading">
+                            <p class="case-meta"><span>01</span>Computer Vision · Animal Welfare</p>
+                            <h3>Pecking Behaviour Detection &amp; Flock Counting</h3>
+                        </div>
+                        <div class="case-detail">
+                            <p>A YOLO-based keypoint model tracks every bird and the position of its head in real time. When one bird’s head enters another’s body region, the event is classified as a pecking attack and the aggressor is flagged in red — giving researchers an objective, automated measure of flock behaviour.</p>
+                            <dl class="case-facts">
+                                <div><dt>Outcome</dt><dd>Real-time detection, ID tracking and behaviour classification</dd></div>
+                                <div><dt>Stack</dt><dd>Python · PyTorch · YOLO keypoints</dd></div>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 -->
+                <article class="case reveal" id="case-avocado">
+                    <figure class="case-media">
+                        <div class="frame">
+                            <img src="assets/work/avocado-hyperspectral.jpg" alt="Avocado detection: RGB view and two-wavelength detection confidence map" width="1100" height="581" loading="lazy">
+                        </div>
+                        <figcaption><span>Fig. 02</span>RGB view and the two-wavelength avocado detection map</figcaption>
+                    </figure>
+                    <div class="case-body">
+                        <p class="case-meta"><span>02</span>Hyperspectral Imaging · Sensor Design</p>
+                        <h3>Avocado Detection from Just Two Wavelengths</h3>
+                        <p>Hyperspectral images capture 204 spectral bands — far more data than a practical field sensor can handle. Using XGBoost decision-tree analysis, I uncovered a direct mathematical relationship between just two wavelengths that is sufficient to detect avocados. That discovery reduces the problem from 204 bands to 2, and now forms the basis of a dedicated two-wavelength camera being developed for avocado detection.</p>
+                        <dl class="case-facts">
+                            <div><dt>Outcome</dt><dd><strong>204 → 2 wavelengths</strong> · 67× faster inference at 89.1% F1-macro</dd></div>
+                            <div><dt>Impact</dt><dd>Foundation for a purpose-built avocado-detection camera</dd></div>
+                            <div><dt>Stack</dt><dd>Hyperspectral imaging · Spectral Python (SPy) · NumPy · XGBoost</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <!-- 03 -->
+                <article class="case case-reverse reveal">
+                    <figure class="case-media">
+                        <div class="frame">
+                            <img src="assets/work/cow-keypoints.jpg" alt="Cow head keypoint detection: eyes, nose and mouth" width="644" height="232" loading="lazy">
+                        </div>
+                        <figcaption><span>Fig. 03</span>Head, eye, nose and mouth keypoints per animal</figcaption>
+                    </figure>
+                    <div class="case-body">
+                        <p class="case-meta"><span>03</span>Deep Learning · Keypoint Regression</p>
+                        <h3>Cow Head Position Analysis</h3>
+                        <p>Built and annotated a custom dataset, then trained a deep-learning model that pinpoints the spatial coordinates of each animal’s head, eyes, nose and mouth — the foundation for downstream behaviour analysis at scale.</p>
+                        <dl class="case-facts">
+                            <div><dt>Outcome</dt><dd><strong>250,000+ images</strong> processed</dd></div>
+                            <div><dt>Stack</dt><dd>Python · PyTorch · Custom dataset annotation</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <!-- 04 -->
+                <article class="case reveal">
+                    <figure class="case-media">
+                        <div class="frame">
+                            <img src="assets/work/dates-palm-forecasting.jpg" alt="Date palm decision-support system: yield per tree and skin separation prediction" width="1519" height="952" loading="lazy">
+                        </div>
+                        <figcaption><span>Fig. 04</span>Decision-support interface for growers and agronomists</figcaption>
+                    </figure>
+                    <div class="case-body">
+                        <p class="case-meta"><span>04</span>Machine Learning · Precision Agriculture</p>
+                        <h3>Date Palm Yield Forecasting</h3>
+                        <p>A decision-support web application with a hybrid ML architecture: Random Forest and XGBoost models run client-side for instant yield forecasts, while a serverless tier on Google Cloud Functions predicts fruit skin separation from agronomic and climate inputs.</p>
+                        <dl class="case-facts">
+                            <div><dt>Outcome</dt><dd>Zero-latency, in-browser forecasting with a serverless prediction tier</dd></div>
+                            <div><dt>Stack</dt><dd>Random Forest · XGBoost · Google Cloud Functions</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <!-- 05 -->
+                <article class="case case-reverse reveal" id="case-research">
+                    <figure class="case-media">
+                        <div class="frame frame-duo">
+                            <img src="assets/work/research-platform.jpg" alt="Research data pooling system interface" width="481" height="860" loading="lazy">
+                            <video loop muted playsinline preload="none" poster="assets/posters/research-walkthrough.jpg" src="videos/hetz-tomato-video.mp4" width="430" height="836" aria-label="Software walkthrough of the research data pooling system"></video>
+                        </div>
+                        <figcaption><span>Fig. 05</span>Interface overview and live software walkthrough</figcaption>
+                    </figure>
+                    <div class="case-body">
+                        <p class="case-meta"><span>05</span>Full-Stack · Cloud Platform</p>
+                        <h3>Research Data Pooling System</h3>
+                        <p>A full-stack research platform on the Firebase suite — Cloud Firestore data modelling, secure Storage and context-aware Security Rules — with Chart.js analytics, Leaflet GPS mapping and a debounced auto-save protected by form-signature verification.</p>
+                        <dl class="case-facts">
+                            <div><dt>Outcome</dt><dd>Centralised field-research data with live mapping and analytics</dd></div>
+                            <div><dt>Stack</dt><dd>JavaScript (ES6) · Firebase · Chart.js · Leaflet</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <!-- 06 -->
+                <article class="case reveal">
+                    <figure class="case-media">
+                        <div class="frame">
+                            <img src="assets/work/plate-analyzer.jpg" alt="Microscopic well analysis Android app" width="312" height="642" loading="lazy">
+                        </div>
+                        <figcaption><span>Fig. 06</span>On-device plate-well capture and intensity analysis</figcaption>
+                    </figure>
+                    <div class="case-body">
+                        <p class="case-meta"><span>06</span>Native Android · Image Processing</p>
+                        <h3>Microscopic Well Analysis App</h3>
+                        <p>A native Android application that captures microscope plate wells and computes intensity values on the device — supporting RGB, Luma and Blue-channel analysis with accuracy on par with desktop ImageJ.</p>
+                        <dl class="case-facts">
+                            <div><dt>Outcome</dt><dd>Desktop-grade scientific analysis on a mobile device</dd></div>
+                            <div><dt>Stack</dt><dd>Android · On-device image processing</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <!-- 07 -->
+                <article class="case case-reverse reveal">
+                    <figure class="case-media">
+                        <div class="frame">
+                            <img src="assets/work/activity-reporting.jpg" alt="Activity reporting system sign-in screen" width="742" height="983" loading="lazy">
+                        </div>
+                        <figcaption><span>Fig. 07</span>Engineer reporting portal with administrative dashboard</figcaption>
+                    </figure>
+                    <div class="case-body">
+                        <p class="case-meta"><span>07</span>Enterprise Web Application</p>
+                        <h3>Activity Reporting System</h3>
+                        <p>An enterprise web application where research engineers log daily and weekly work, backed by an administrative dashboard for reporting, metrics and productivity tracking.</p>
+                        <dl class="case-facts">
+                            <div><dt>Outcome</dt><dd><strong>In daily production use</strong></dd></div>
+                            <div><dt>Stack</dt><dd>Node.js · Express · UI/UX design</dd></div>
+                        </dl>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============================== CONTACT ============================== -->
+        <section class="contact" id="contact" data-theme="dark">
+            <div class="container grid-12">
+                <p class="section-label reveal"><span>04</span>Contact</p>
+
+                <div class="section-content contact-grid">
+                    <div class="contact-copy">
+                        <h2 class="contact-title reveal">Have a role or a project in mind? <em>Let’s talk.</em></h2>
+                        <p class="contact-lead reveal">
+                            Open to senior engineering positions and consulting engagements in artificial
+                            intelligence, Android, web architecture and embedded systems. Based in Israel and
+                            collaborating with teams internationally, across time zones.
+                        </p>
+
+                        <ul class="contact-list reveal">
+                            <li>
+                                <a href="mailto:yehudaheller10@gmail.com">
+                                    <span class="contact-kind">Email</span>
+                                    <span class="contact-value">yehudaheller10@gmail.com</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/yehuda-heller/" target="_blank" rel="noopener noreferrer">
+                                    <span class="contact-kind">LinkedIn</span>
+                                    <span class="contact-value">in/yehuda-heller</span>
+                                    <svg class="icon icon-out" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-globe reveal" aria-hidden="true">
+                        <video loop muted playsinline preload="none" poster="assets/posters/globe.jpg" src="videos/glob.mp4"></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <footer class="footer">
+                    <p>© <span id="year">2026</span> Yehuda Heller</p>
+                    <p class="footer-role">Software Engineer — AI, Edge AI &amp; Embedded Systems</p>
+                    <a class="footer-top" href="#top">Back to top ↑</a>
+                </footer>
+            </div>
+        </section>
+    </main>
+
     <script src="app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 80,
-            duration: 1000,
-            once: true,
-            easing: 'ease-out-cubic'
-        });
-    </script>
 </body>
 </html>
